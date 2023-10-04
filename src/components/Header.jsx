@@ -6,8 +6,8 @@ const Header = () => {
             <h1>This is my React app</h1>
             <nav>
                 <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
+                    <li><a href='about'> about us</a></li>
+                    <li><a href='home'> Home </a></li>
                     {/* Add more list items as needed */}
                 </ul>
             </nav>
