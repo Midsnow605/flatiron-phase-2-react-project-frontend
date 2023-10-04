@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import Header from './components/Header'
-//
+import React from 'react';
+import Header from './components/Header';
+import About from './components/About';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <Header />
+  <>
+  <Header />
+  <About />
+  </>
   )
 }
 
-export default App
+export default App;
