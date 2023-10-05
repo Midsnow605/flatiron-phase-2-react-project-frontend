@@ -1,14 +1,28 @@
 import React from 'react';
 import Header from './components/Header';
-import About from './components/About';
+import About from './pages/About';
+import Home from './pages/Home';
 
-const App = () => {
+function App() {
+  let Component;
+
+  switch (window.location.pathname) {
+    case "/":
+      Component = Home;
+      break;
+    case "/about":
+      Component = About;
+      break;
+    default:
+      Component = Home; // Set a default component for unknown paths
+  }
+
   return (
-  <>
-  <Header />
-  <About />
-  </>
-  )
+    <>
+      <Header />
+      <Component />
+    </>
+  );
 }
 
 export default App;
