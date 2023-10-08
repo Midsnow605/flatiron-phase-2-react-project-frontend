@@ -4,7 +4,11 @@ body{
   background-color: #954a4a;
   text-align: center;
 }
-
+.Title {
+  background-color: rgb(164, 45, 12);
+  text-decoration: line-through;
+  text-decoration-color: #f0f0f0;
+}
 .nav {
   background-color: rgb(164, 45, 12) ;
   color: rgb(206, 63, 23);
