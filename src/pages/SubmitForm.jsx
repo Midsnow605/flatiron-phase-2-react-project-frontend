@@ -9,7 +9,6 @@ const SubmitForm = ({ onFormSubmit }) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     onFormSubmit(formData);
     setFormData({ image: '', name: '', description: '' }); // Reset the form after submission
   };
