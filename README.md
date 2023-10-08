@@ -37,6 +37,9 @@ Use the "Add New Anime" form to add a new anime.
 To delete an anime, click the "Delete" button next to the anime you want to remove.
 Contributing
 Feel free to contribute to this project by opening issues or creating pull requests.
+!I am planning to add a rating system and a reccomendation randomizer in the future.!
 
 License
 This project is licensed under the MIT License.
+
+Link to a demo video is : https://www.youtube.com/watch?v=Wog28IHDAAU&ab_channel=SativaBunny
