@@ -10,21 +10,17 @@ const SubmitForm = ({ onFormSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
-  
+
     // Check if any of the form fields are empty
     if (!formData.image || !formData.name || !formData.description) {
       alert('Please fill in all fields.');
       return; // Do not proceed with the submission if any field is empty
     }
-  
+
     // Proceed with form submission if all fields are filled
     onFormSubmit(formData);
     setFormData({ image: '', name: '', description: '' });
     window.location.reload();
-      })
-      .catch((error) => {
-        console.error('Error submitting data:', error);
-      });
   };
 
   return (
