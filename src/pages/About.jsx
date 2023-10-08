@@ -3,9 +3,9 @@ import React from 'react';
 const About = () => {
   return (
     <div>
-      <h2>About Us</h2>
+      <h2>About </h2>
       <p>
-        Welcome to Anime Lister! We are a platform dedicated to anime enthusiasts, providing a space to discover,
+        Welcome to Anime Lister!  This app is dedicated to anime enthusiasts, providing a space to discover,
         share, and connect with fellow fans.
       </p>
 
