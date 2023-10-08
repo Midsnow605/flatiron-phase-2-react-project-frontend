@@ -1,19 +1,14 @@
-const handleDelete = async (animeId, setAnimeData) => {
-  try {
-    const response = await fetch(`http://localhost:3000/anime/${animeId}`, {
-      method: 'DELETE',
-    });
-
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+const handleDelete = async (animeId) => {
+  if (window.confirm("Do you want to remove?")) {
+    try {
+      await fetch(`http://localhost:3000/anime/${animeId}`, {
+        method: "DELETE"
+      });
+      window.location.reload();
+    } catch (error) {
+      console.error('Error deleting anime:', error.message);
     }
-
-    // Refresh anime data after successful deletion
-    const updatedData = await response.json();
-    setAnimeData(updatedData);
-  } catch (error) {
-    console.error('Error deleting anime:', error);
   }
-};
+}
 
 export default handleDelete;

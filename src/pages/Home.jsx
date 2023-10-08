@@ -63,7 +63,7 @@ const Home = () => {
                 <img src={anime.image} alt={anime.name} />
                 <h4>{anime.name}</h4>
                 <p>{anime.description}</p>
-                <button onClick={() => handleDelete(anime.id, setAnimeData)}>Delete</button>
+                <button className='Delete' onClick={() => handleDelete(anime.id)}>Delete</button>
 
               </li>
             ))}
