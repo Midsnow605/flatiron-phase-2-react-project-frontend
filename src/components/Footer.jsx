@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className="footer">
-      <p>&copy; 2023 Your App Name</p>
+      <p>&copy; 2023 My Anime Lister</p>
       <ul>
-        <li><a href='#top'>Go to top</a></li>
+        <><a href='#top'>Go to top</a></>
       </ul>
     </div>
   );
